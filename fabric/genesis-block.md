@@ -68,7 +68,7 @@ oc edit correct-name #
  oc create configmap correct-name --from-file modified-genesis.block
 ```
 
-## experiments
+## Experiments
 
 ```
 git clone -b v2.1.1 https://github.com/hyperledger/fabric.git
