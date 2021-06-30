@@ -4,14 +4,14 @@ pragma solidity >=0.6.0 <0.7.0;
 pragma experimental ABIEncoderV2;
 
 import "@openzeppelin/contracts/proxy/Initializable.sol";
-import "@darwinia/contracts-utils/contracts/Pausable.sol";
-import "@darwinia/contracts-utils/contracts/ECDSA.sol";
-import "@darwinia/contracts-utils/contracts/SafeMath.sol";
-import "@darwinia/contracts-utils/contracts/Bits.sol";
-import "@darwinia/contracts-utils/contracts/Bitfield.sol";
-import "@darwinia/contracts-utils/contracts/ScaleCodec.sol";
-import "@darwinia/contracts-verify/contracts/MerkleProof.sol";
-import "@darwinia/contracts-verify/contracts/MMR.sol";
+import "contracts-utils/contracts/Pausable.sol";
+import "contracts-utils/contracts/ECDSA.sol";
+import "contracts-utils/contracts/SafeMath.sol";
+import "contracts-utils/contracts/Bits.sol";
+import "contracts-utils/contracts/Bitfield.sol";
+import "contracts-utils/contracts/ScaleCodec.sol";
+import "contracts-verify/contracts/MerkleProof.sol";
+import "contracts-verify/contracts/MMR.sol";
 import "./ValidatorRegistry.sol";
 
 contract LightClientBridge is Pausable, Initializable, ValidatorRegistry {

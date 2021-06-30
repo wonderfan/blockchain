@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0 <0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@darwinia/contracts-utils/contracts/Ownable.sol";
-import "@darwinia/contracts-verify/contracts/MerkleProof.sol";
+import "contracts-utils/contracts/Ownable.sol";
+import "contracts-verify/contracts/MerkleProof.sol";
 
 /**
  * @title A contract storing state on the current validator set
