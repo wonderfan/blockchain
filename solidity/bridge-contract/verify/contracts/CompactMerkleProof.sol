@@ -25,12 +25,12 @@
 pragma solidity >=0.6.0 <0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@darwinia/contracts-utils/contracts/Input.sol";
-import "@darwinia/contracts-utils/contracts/Memory.sol";
-import "@darwinia/contracts-utils/contracts/Bytes.sol";
-import "@darwinia/contracts-utils/contracts/Keccak.sol";
-import "@darwinia/contracts-utils/contracts/Nibble.sol";
-import "@darwinia/contracts-utils/contracts/Node.sol";
+import "contracts-utils/contracts/Input.sol";
+import "contracts-utils/contracts/Memory.sol";
+import "contracts-utils/contracts/Bytes.sol";
+import "contracts-utils/contracts/Keccak.sol";
+import "contracts-utils/contracts/Nibble.sol";
+import "contracts-utils/contracts/Node.sol";
 
 /**
  * @dev Verification of compact proofs for Modified Merkle-Patricia tries.

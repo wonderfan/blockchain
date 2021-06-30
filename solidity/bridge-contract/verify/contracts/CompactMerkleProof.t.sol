@@ -1,6 +1,6 @@
 pragma solidity >=0.6.0 <0.7.0;
 
-import "@darwinia/contracts-utils/contracts/ds-test/test.sol";
+import "contracts-utils/contracts/ds-test/test.sol";
 import "./CompactMerkleProof.sol";
 pragma experimental ABIEncoderV2;
 
