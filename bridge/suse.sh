@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 curl localhost:8081 --data '{"jsonrpc":"2.0","method": "node_getNodeStates", "namespace": "global", "id": 1}'
 curl localhost:8081 --data '{"jsonrpc":"2.0","method": "block_latestBlock", "namespace": "global", "id": 1}'
