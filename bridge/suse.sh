@@ -40,9 +40,6 @@ kubeadm init --kubernetes-version v1.11.10 -v=4 --pod-network-cidr=10.244.14.0/1
 
 journalctl -xeu kubelet | tail -n 20
 
-https://download.opensuse.com
-ssh root@39.104.205.110 Zhigui123
-
 kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --cgroup-driver=cgroupfs --network-plugin=cni --pod-infra-container-image=k8s.gcr.io/pause:3.1"
 
 kubelet --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --cgroup-driver=cgroupfs --pod-infra-container-image=k8s.gcr.io/pause:3.1
@@ -54,7 +51,6 @@ https://github.com/SUSE/skuba
 https://software.opensuse.org/download/package?package=kubernetes&project=devel%3Akubic
 
 ls -l /sys/fs/cgroup
-ssh root@39.99.34.160 Zhigui123  zypper
 wget https://download.docker.com/linux/static/stable/x86_64/docker-17.03.0-ce.tgz
 wget https://download.docker.com/linux/static/stable/x86_64/docker-18.06.3-ce.tgz
 
@@ -81,8 +77,6 @@ curl -LO https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.18.0/
 
 scp kubeadm kubectl kubelet  root@39.99.34.160:/root
 stat /var/run/docker.sock
-
-ssh root@47.89.235.103 Zhigui123
 
 crictl --runtime-endpoint "unix:///var/run/docker/libcontainerd/docker-containerd.sock"
 
