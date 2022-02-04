@@ -12,4 +12,4 @@ The blockchain state is also updated after the block is executed. The transactio
 
 The state can be aliased as consensus state. The consensus state is leveled up with new block.
 
-
+The fundamental items in the state are version, chain id, last block, validators, and application hash.
