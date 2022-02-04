@@ -9,3 +9,7 @@ The client can send both common rpc request and gRPC request. The capability is 
 The context object contains a lot of fields in its type definition. The fields can be categoried into end user, key management, encoding, signature and node. The context defines with style methods to decorate the field.
 
 The command flags are described by constant variables. They can be used with flags and flagset.
+
+The minter and minting parameters are ready before minting the coins. This process is carried out in the block begin hook point. 
+
+The sdk context is the first parameter in the keeper's method and the logger can be fetched from context object.
