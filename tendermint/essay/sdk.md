@@ -13,3 +13,7 @@ The command flags are described by constant variables. They can be used with fla
 The minter and minting parameters are ready before minting the coins. This process is carried out in the block begin hook point. 
 
 The sdk context is the first parameter in the keeper's method and the logger can be fetched from context object.
+
+## Mint
+
+The minter and minting parameters can be set and get. The bank module will mint the coins upon the minter and parameters information.
