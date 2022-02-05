@@ -17,3 +17,7 @@ The sdk context is the first parameter in the keeper's method and the logger can
 ## Mint
 
 The minter and minting parameters can be set and get. The bank module will mint the coins upon the minter and parameters information.
+
+The module name is used as query condition to get target account. The mint account must have minter role and permissions.When valid minting account is found, minting is just to add new coins into minting account. As a result, designing minting account is the key point.
+
+
