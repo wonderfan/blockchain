@@ -20,4 +20,9 @@ The minter and minting parameters can be set and get. The bank module will mint 
 
 The module name is used as query condition to get target account. The mint account must have minter role and permissions.When valid minting account is found, minting is just to add new coins into minting account. As a result, designing minting account is the key point.
 
+Burning coins has the same mechanism as minting coins.
+
+## Account
+
+
 
