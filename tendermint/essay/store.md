@@ -9,4 +9,6 @@ The best practise is that we can guess the object's relationship from their name
 
 The store information contains two parts: its name and commit id. The commit id is struct type and includes other information.The commit id is made of version and hash. The commit info has one-to-many relationship with store info. The store info has one-to-one relationship with commit id.
 
+We can use code statement to verify whether the struct type implements the target interface. The tree data structure can also be used as storage mechanism. It is one data form and storage on top of memory. When the system is out of rage, the data are gone and lost.
 
+The final target is to construct store onject. Before we achieve the target, the tree object should be created at the first step. The tree package gives us all kinds of tree implementations we can use. Our store is built atop of tree functionality.
