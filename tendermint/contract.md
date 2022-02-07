@@ -6,4 +6,5 @@ The jvm can be started by start function. The start function uses one independen
 
 When contract transaction is sent from client, the valid transaction will be included in the block. The transaction will be executed during the block is applied. The transaction will lead the state transition in the contract engine side. The final state is stored in the module storage and contributed to the whole commit id and hash.
 
+There are three constructor functions in the source code file. The code base, database and state tree are its associated fields. These fields are created by the help of configuration.
 
