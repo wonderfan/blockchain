@@ -9,3 +9,7 @@ When contract transaction is sent from client, the valid transaction will be inc
 There are three constructor functions in the source code file. The code base, database and state tree are its associated fields. These fields are created by the help of configuration.
 
 The message is the input parameter for all kinds of functions. The state tree is the tree storage for whole state. The state slot is only segment state. It is only one part of the whole state.
+
+## State
+
+
