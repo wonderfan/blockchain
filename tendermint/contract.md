@@ -15,3 +15,6 @@ The message is the input parameter for all kinds of functions. The state tree is
 The contract transaction is handled by sandbox which provides closed environment for transaction processing. There are two kinds of sandboxes. One is regular sandbox and the other is system sandbox for system contract. The input parameters are message, state slot and contract class. The reflection is used to get target method from smart contract class. The state is put into the context object and placed as the first parameter for the contract method.
 
 The sandbox class has one field named code base which its type is CodeBase. The CodeBase class is in charge of processing contract. The contract id can be used as query criteria to get contract class. 
+
+The configuration file can be loaded and parsed as configuration object. The state tree is the inner field of code base class. One contract class has one state slot in the state tree. The contract class has one-to-one relationship with state slot. The state slot has the block height attributes. 
+
