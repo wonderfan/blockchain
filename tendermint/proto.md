@@ -8,4 +8,4 @@ The key problem is how to map the replationship between message and action. The 
 
 The function's operations are described by bulleted-lists and visualized by diagrams. The function specification is breaked down into serverl files and has the same file structures. The main content are concept, state, state transimition, message, block hooks, module hooks, events, params, future improvements, appendix.
 
-
+The archive server is started by the command and The parameters are cert files, key and address and port, The home is also the command argument. The blockchain node is stopped and archive process is executed. 
