@@ -10,9 +10,13 @@ install_name_tool -rpath old new
 
 echo $MY_LIB_PATH
 
-sudo find / -name 'libjvm.dylib'
+[MacOs] How to solve jvm dynamic library 
 
-install_name_tool -add_rpath $libpath cosmovisor
+# find the dynamic library path
+find /Library -name 'libjvm.dylib'
+
+# add runtime path
+install_name_tool -add_rpath {jvm-dynamic-library-path} ./cosmovisor
 
 otool -l cosmovisor
 
