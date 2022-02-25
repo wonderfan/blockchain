@@ -18,3 +18,4 @@ The sandbox class has one field named code base which its type is CodeBase. The 
 
 The configuration file can be loaded and parsed as configuration object. The state tree is the inner field of code base class. One contract class has one state slot in the state tree. The contract class has one-to-one relationship with state slot. The state slot has the block height attributes. 
 
+The virtual machine can intepret the smart contract code and run its logic.
