@@ -6,4 +6,4 @@ The scope includes local, system and global. The local scope applies to the code
 
 ## Command
 
-The merge command is used when collaborating with other developers.
+The merge command is used when collaborating with other developers. The git cheat sheet provides the basic git operations.
