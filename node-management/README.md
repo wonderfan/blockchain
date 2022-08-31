@@ -28,6 +28,27 @@
 7. The p2p connection is on the basis of group.
 8. 
 
+### XuperChain
+
+#### ParaChain and Group
+
+1. ParaChain can be extensible when business expands.
+2. ParaChain has its own data.
+3. There is main chain.
+4. The data can be shared and accessed if the parachain is in the same group.
+5. The group mechanism is achieved by whitelist and carried out in the network layer.
+6. The group is implemented by smart contract.
+7. There is only one group contract.
+8. XuperChain is a network and composed of master chain and business-oriented chains.
+
+#### CA
+
+1. The CA server is introduced.
+2. The certificates are issued in the same way.
+3. The node is authoried by the CA server.
+
+
+
 ### Group
 
 ### CitaChain
