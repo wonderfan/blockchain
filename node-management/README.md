@@ -26,7 +26,7 @@
 5. The admission of network access is managed through smart contract.
 6. The node is allowed by certificate authority.
 7. The p2p connection is on the basis of group.
-8. 
+
 
 ### XuperChain
 
@@ -47,7 +47,10 @@
 2. The certificates are issued in the same way.
 3. The node is authoried by the CA server.
 
+### ChainMaker
 
+1. One network and multiple chains.
+2. The account can be either private/public key pair or certificate based.
 
 ### Group
 
