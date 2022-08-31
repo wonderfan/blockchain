@@ -22,7 +22,11 @@
 1. The group can be extended dynamically.
 2. One chain can have multiple groups.
 3. multiple institutions and multiple groups consortium chain.
-4. 
+4. Precompiled contract or system contracts are used for permission management.
+5. The admission of network access is managed through smart contract.
+6. The node is allowed by certificate authority.
+7. The p2p connection is on the basis of group.
+8. 
 
 ### Group
 
