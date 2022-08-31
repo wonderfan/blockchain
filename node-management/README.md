@@ -17,6 +17,12 @@
 
 ### BCOS
 
+#### Group
+
+1. The group can be extended dynamically.
+2. One chain can have multiple groups.
+3. multiple institutions and multiple groups consortium chain.
+4. 
 
 ### Group
 
