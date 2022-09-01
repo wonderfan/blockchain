@@ -17,3 +17,8 @@
 
 When unexpected things happen, there should be measures to rescue the situation.
 
+1. The data in the node database can be deleted by version.
+2. The key point is how to populate the tree with last valid version and does not break the constraints between mutable 
+   and immutable parts.
+3. rollback proposal to community.
+
