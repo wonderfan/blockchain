@@ -15,3 +15,12 @@
 9. If error happens in the dial procedure, the peer network address is removed from address book.
 10. If the network address is in the list of persistent peers, the reconnection action is executed by go routine.
 11. The transport and connection are critical components for finding the root cause.
+12. If there are some errors in the send or receive process, the peer is stopped and reconnected if it is persistent peer.
+
+## Lifecycle
+
+1. When the node starts up, the persistent peers are dialed and generated peer list.
+2. If errors happen in the sending and receiving action, there would be something wrong with connection.
+3. The conditions for reconnection can be found. There should be some logic hole in the current codes.
+
+
