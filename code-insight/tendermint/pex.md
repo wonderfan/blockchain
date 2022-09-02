@@ -29,4 +29,4 @@
 8. The reconnection method will try 20 times and each time is 5 seconds.
 9. The transport term is created for peer and based on the raw network connection.
 10. The transport interface has dial and accept method on the peer level.
-11. 
+11. The pex makes use of go routine to dial the peers in the address book.
