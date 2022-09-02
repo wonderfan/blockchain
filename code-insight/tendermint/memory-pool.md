@@ -7,3 +7,5 @@
 3. The peer object has state field that represent its state data.
 4. The transaction message is protocol buffer format and style.
 5. The transaction message can hold one transaction and multiple transactions.
+6. When the transaction is received from the pool reactor, the node will call memory pool's checkTx method to validate it.
+7. 
