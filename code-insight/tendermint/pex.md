@@ -22,5 +22,11 @@
 1. When the node starts up, the persistent peers are dialed and generated peer list.
 2. If errors happen in the sending and receiving action, there would be something wrong with connection.
 3. The conditions for reconnection can be found. There should be some logic hole in the current codes.
-
-
+4. There are two addresses for each peer. One is socket address, the other is network address.
+5. When the node stopped, the peer is stopped and removed.
+6. The reconnection policy is interval as first and backoff as second.
+7. The reconnection constant variables are defined for interval and attempt times.
+8. The reconnection method will try 20 times and each time is 5 seconds.
+9. The transport term is created for peer and based on the raw network connection.
+10. The transport interface has dial and accept method on the peer level.
+11. 
