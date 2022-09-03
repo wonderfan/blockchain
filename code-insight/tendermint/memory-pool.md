@@ -29,4 +29,16 @@
 2. The transaction is checked before adding into memory pool.
 3. The concurrent list structure is the data structure which is used to store valid transactions.
 4. There is a question that how many concurrent accesses are supported.
-5. 
+5. How to evaluate the cache design and implantation.
+6. The function type is used to decorate the concurrent list.
+7. If the cache size is configured in the file, the cache instance is initialized.
+8. The pre/post pattern is adopted for transaction validition.
+9. Why does the memory pool also use write ahead log and what is its purpose?
+10. If the process wants to execute checkTx method, it should acquire the lock firstly.
+11. Before the transaction is validated, the transaction will write into a log file.
+12. The memory pool is full when either size or bytes are matched.
+13. The new form is defined to store transaction in the memory pool.
+14. The memory transaction cache has its own lock.
+15. The transaction in the log can be used for debug and analyzed.
+16. The transaction in the form of bytes will be written into write ahead log.
+17. 
