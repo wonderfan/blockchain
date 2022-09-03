@@ -22,3 +22,11 @@
 18. The channel table can used to depict the channel name and its number.
 19. The memory pool is created and hooked in the node initialization.
 20. Both the memory pool and memory pool reactor are created at the same time.
+
+## Interface and Implemention
+
+1. The transactions are stored into memory pool and in the specific order.
+2. The transaction is checked before adding into memory pool.
+3. The concurrent list structure is the data structure which is used to store valid transactions.
+4. There is a question that how many concurrent accesses are supported.
+5. 
