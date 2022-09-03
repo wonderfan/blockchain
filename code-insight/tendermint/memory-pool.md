@@ -41,4 +41,5 @@
 14. The memory transaction cache has its own lock.
 15. The transaction in the log can be used for debug and analyzed.
 16. The transaction in the form of bytes will be written into write ahead log.
-17. 
+17. The load test is performed, all parts should be ready for concurrent process.
+18. If the prometheus is enabled, the metrics data will write into prometheus metrics collector.
