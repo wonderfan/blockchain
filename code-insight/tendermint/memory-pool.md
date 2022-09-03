@@ -43,3 +43,5 @@
 16. The transaction in the form of bytes will be written into write ahead log.
 17. The load test is performed, all parts should be ready for concurrent process.
 18. If the prometheus is enabled, the metrics data will write into prometheus metrics collector.
+19. Several reasons will cause connection rejection error.
+20. We should pay attention to the network address format and its value.
