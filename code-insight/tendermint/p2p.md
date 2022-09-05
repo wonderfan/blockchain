@@ -46,3 +46,12 @@ When the node starts, the switch instance is created and started. The transport 
 
 ## How to embed zone concept into current implementation?
 
+### Node network address
+
+1. The network address is composed of node identity, node ip and port.
+2. The network address can be expressed as string format.
+3. The network structure type and string type are converted.
+4. The ip address can be looked up by host name.
+5. There is aslo protocol buffer format for network address.
+6. The ip address have several kinds of formats and styles.
+
