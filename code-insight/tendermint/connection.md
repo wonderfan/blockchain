@@ -8,3 +8,4 @@ There is timeout mechanism for pong request. If the pong response is not receive
 
 The channle must be closed if the service is stopped. The connection is stopped in the stop method. If there is something wrong with stop method, the registed error callback function is called. The send method has one channel with send go routine. When the send action is triggered,one value is written into the send channel. The go routine will check the send channel and send out the message bytes if the send channel is not empty. 
 
+The message is send in the batch mode. During one cycle, the number of messages which are sent out is determined by the batch number. The pachet send method iteracts the channels and send out the message in the channel. The channel ratio is controlled and the least channel is selected and its pending message is send out.
