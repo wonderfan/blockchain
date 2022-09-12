@@ -1,0 +1,5 @@
+# Connection
+
+The connection is the wrapper of network raw connection. There are some constant variables to control the connection's attribute and behaviros. The max packet message size is the control of message. If the message size is more than the constant value, the message is chunked or error is raised. The connection is able to write and read. The buffer mechansim is enfored on the read and write operation. The buffer size can be specified. How is the buffer size calculated is one of scientific question. The flow rate is used to control message flow and its rate.
+
+There are three scenarios for connection: read, write and error. In the normal case, the receive callback function is executed when the message arrives in the client. The error callbach function is invoked when there is something wrong with connection error. The send and receive are monitored by the flow rate. The send and pong channel is used for go routine communication. The quit and done channel is used for communication termincation. The flush method is executed by the time ticker to flush the buffer data.
