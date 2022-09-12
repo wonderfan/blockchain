@@ -14,4 +14,4 @@ The parameters are passed and wait action is triggered if the condition is met. 
 
 The error can happen in the step of message recieve procedure or default select statement, the error will show the connection failed error message.
 
-
+The connection status and channel status are defined to depict the connection state and channel state. From the connection status, we know how long passed and send/receive flow state. The channel status keeps record of the queue capacity, queue size, priority and recently sent data. The channel type is used to stand for channel between reactor and connection. The channel structure type has connection as its field and send/receive queue for message storage. The connection is the backbone of channel and the channel character is described by channel descriptor.There are only three kinds of message types: message ping, message pong and packet message.
