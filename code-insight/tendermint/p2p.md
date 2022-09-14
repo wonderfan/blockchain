@@ -55,3 +55,8 @@ When the node starts, the switch instance is created and started. The transport 
 5. There is aslo protocol buffer format for network address.
 6. The ip address have several kinds of formats and styles.
 
+The io is in the manner of async mode. Seven message type is defined by enum data type. The peer type can be required or optional. The public key is used to stand for the node's identity. The node has node id, node type fields. The node table is employed to store the node list. The node table has add and remove methods to manage node list. 
+
+The system contract is used to extend the chain features and capabilities. The node information is the data structure defined to describenode's attributes and actions. The group is the data model which has group name and chain id. The group has the collection of nodes. The group concept is introduced to expand the multiple groups.
+
+The number of node connection is certain, therefore, there should be one policy that guide how the connection is discarded when new connection is coming. The private key is generated firstly. The certificate is issued secondly.
