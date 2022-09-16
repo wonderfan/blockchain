@@ -60,3 +60,7 @@ The io is in the manner of async mode. Seven message type is defined by enum dat
 The system contract is used to extend the chain features and capabilities. The node information is the data structure defined to describenode's attributes and actions. The group is the data model which has group name and chain id. The group has the collection of nodes. The group concept is introduced to expand the multiple groups.
 
 The number of node connection is certain, therefore, there should be one policy that guide how the connection is discarded when new connection is coming. The private key is generated firstly. The certificate is issued secondly.
+
+The node can be discovered and connected automatically. The active node can be the seed node. The network discovery mechnism can support large and complex network. The link layer can be NAT and proxy. The node identity is verified by the tls connection which uses the certificate. The tls certficate is unique per node. The node info definition contains the certificate field. The whole archicture divides into three layers: application layer, management layer and secure transport layer. 
+
+The public key can be encoded into x509 certificate extension. 
