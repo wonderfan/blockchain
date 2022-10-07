@@ -14,6 +14,7 @@ The main directory is the entry point to php compiler and executor. The interfac
 
 ## Python
 
+The compiler has abstract syntax tree, code segment, compile procedures, operation codes, memory management and symbol table. 
 
 ## Shell
 
