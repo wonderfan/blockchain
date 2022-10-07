@@ -11,3 +11,10 @@ The bootstrap steps are executed in the sequentail order. The virtual machine is
 ## PHP
 
 The main directory is the entry point to php compiler and executor. The interfaces are specified by api. The zend directory is the implementation of php specification. In c language, the type is before the variable name. The php source code elements are described by c language types. The compile function is provided for several scenarios. 
+
+## Python
+
+
+## Shell
+
+The configure is shell script which can do some check and preparation work. The configuration step is finished by configuration script. All of configuration work can be put into configure script. 
