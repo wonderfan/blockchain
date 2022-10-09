@@ -13,3 +13,5 @@ The target file is found by the file name. The content and its lines are iterate
 ## OpenJDK
 
 The main method passes the process right to the launch method. In the launch method, the execution environment is created and the jvm is initialized. The new thread is created to launch java virtual machine. The main method is called by the main thread.The java native call can be executed in the current thread or new thread by operating system thread. The system call is performed in the low level programming language. 
+
+The launcher is helper class and written in java language. It is enumeration type. Lots of static fields are defined in the class body. The system class loader is used in the launcher helper class. The switch case statement is used to show different kinds of settings like virtual machine, properties and locale. The virtual machine contains stack, heap, machine class properties. The properties is get from system class and print them out. The message is parsed and printed according to their pattern. The main class can be acquired from jar file. The class is able to be loaded by system class loader. The method can be acquired by infection approach. 
