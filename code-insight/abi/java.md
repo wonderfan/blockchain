@@ -17,3 +17,25 @@ The main method passes the process right to the launch method. In the launch met
 The launcher is helper class and written in java language. It is enumeration type. Lots of static fields are defined in the class body. The system class loader is used in the launcher helper class. The switch case statement is used to show different kinds of settings like virtual machine, properties and locale. The virtual machine contains stack, heap, machine class properties. The properties is get from system class and print them out. The message is parsed and printed according to their pattern. The main class can be acquired from jar file. The class is able to be loaded by system class loader. The method can be acquired by infection approach. The clue is that the class is loaded and called. The bootstrap loader is used to find the loader. The jvm is implemented in c plus plus language. The c version data type and method is available for understanding. It is possible that the class file is parsed by the class file parser. It is no doubt that the class file is loaded by the class file loder and its content to be parsed. The class is defined for class path, class path directory. The class loader is in charge of class loading by class type. It is likely that the package information is looked up from the package file. The return value of class file load method is the class instance. The class file is read as stream and parsed as class instance handle. The class data is also read as necessary data. 
 
 The c language version of java standard class is responsible for processing class file. The class is class type and class instance is also class type. 
+
+## HotSpot
+
+The Java runtime environment as provided by OpenJDK consists of the HotSpot JVM combined with class libraries (which are largely bundled up into rt.jar).
+
+As Java is a portable environment, anything that requires a call into the operating system is ultimately handled by a native method. In addition, some methods require special support from the JVM (e.g. classloading). These too are handed off to the JVM via a native call.
+
+For example, let’s look at the C source for the native methods of the primordial Object class. The native source for Object is contained in jdk/src/share/native/java/lang/Object.c and it has six methods.
+
+The Java Native Interface (JNI) usually requires the C implementations of native methods to be named in a very specific way. For example, the native method Object::getClass() uses the usual naming convention, so the C implementation is contained in a C function with this signature:
+
+```
+Java_java_lang_Object_getClass(JNIEnv *env, jobject this)
+```
+
+Any Java object in the heap is represented by an Ordinary Object Pointer (OOP). An OOP is a genuine pointer in the C / C++ sense - a machine word which points to a memory location inside the Java heap. The Java heap is allocated as a single continuous address range in terms of the JVM process’s virtual address space, and then memory is managed purely from within user space by the JVM process itself, unless the JVM needs to resize the heap for any reason.
+
+The vtable structure of klassOops is directly relevant to Java’s method dispatch and single inheritance. Remember that Java’s instance method dispatch is virtual by default (so methods are looked up using the runtime type information of the instance object being called).
+
+This is implemented in klassOop vtables by the use of “constant vtable offset”. This means that an overriding method is at the same offset in the vtable as the implementation in the parent (or grandparent, etc) that is being overridden.
+
+Virtual dispatch is then easily implemented by simply walking up the inheritance hierarchy (tracking from class to superclass to super-superclass) and looking for an implementation of the method, always at the same vtable offset. 
