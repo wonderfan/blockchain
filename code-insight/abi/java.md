@@ -39,3 +39,27 @@ The vtable structure of klassOops is directly relevant to Java’s method dispat
 This is implemented in klassOop vtables by the use of “constant vtable offset”. This means that an overriding method is at the same offset in the vtable as the implementation in the parent (or grandparent, etc) that is being overridden.
 
 Virtual dispatch is then easily implemented by simply walking up the inheritance hierarchy (tracking from class to superclass to super-superclass) and looking for an implementation of the method, always at the same vtable offset. 
+
+HotSpot is a more advanced interpreter than the simplistic “switch in a while loop” style of interpreters that are usually more familiar to developers.
+
+Instead, HotSpot is a template interpreter. This means that a dynamic dispatch table of optimised machine code is constructed - which is specific to the operating system and CPU in use. The majority of bytecode instructions are implemented as assembler language code, with only the more complex instructions such as looking up an entry from a classfile’s constant pool being delegated back to the VM.
+
+This improves HotSpot’s interpreter performance at a cost of making it more difficult to port the VM to new architectures and operating systems. It also makes the interpreter harder to understand for new developers.
+
+In terms of getting started, it’s often better for developers to gain a basic understanding of the runtime environment provided by OpenJDK:
+
+Most of the environment written in Java
+Operating system portability achieved with native methods
+Java objects represented in the heap as OOPs
+Class metadata expressed in the JVM as KlassOOPs
+An advanced template interpreter for high performance even in interpreted mode.
+
+## Code Styles
+
+Some programmers seem to have lexers and even C preprocessors installed directly behind their eyeballs. The rest of us require code that is not only functionally correct but also easy to read. More than that, since there is no one style for easy-to-read code, and since a mashup of many styles is just as confusing as no style at all, it is important for coders to be conscious of the many implicit stylistic choices that historically have gone into the HotSpot code base.
+
+Some of these guidelines are driven by the cross-platform requirements for HotSpot. Shared code must work on a variety of platforms, and may encounter deficiencies in some. Using platform conditionalization in shared code is usually avoided, while shared code is strongly preferred to multiple platform-dependent implementations, so some language features may be recommended against.
+
+Some of the guidelines here are relatively arbitrary choices among equally plausible alternatives. The purpose of stating and enforcing these rules is largely to provide a consistent look to the code. That consistency makes the code more readable by avoiding non-functional distractions from the interesting functionality.
+
+When changing pre-existing code, it is reasonable to adjust it to match these conventions. Exception: If the pre-existing code clearly conforms locally to its own peculiar conventions, it is not worth reformatting the whole thing. Also consider separating changes that make extensive stylistic updates from those which make functional changes.
