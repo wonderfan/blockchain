@@ -63,3 +63,6 @@ Some of these guidelines are driven by the cross-platform requirements for HotSp
 Some of the guidelines here are relatively arbitrary choices among equally plausible alternatives. The purpose of stating and enforcing these rules is largely to provide a consistent look to the code. That consistency makes the code more readable by avoiding non-functional distractions from the interesting functionality.
 
 When changing pre-existing code, it is reasonable to adjust it to match these conventions. Exception: If the pre-existing code clearly conforms locally to its own peculiar conventions, it is not worth reformatting the whole thing. Also consider separating changes that make extensive stylistic updates from those which make functional changes.
+
+The whole content can be refered from here (https://github.com/openjdk/jdk/blob/master/doc/hotspot-style.md).
+
