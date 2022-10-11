@@ -1,4 +1,7 @@
 # Go Language
 
-The object file data can be written into file by writer. There are two parameters. both of them are pointer type. The object file header is written into file firstly. There are symbols from builtin. The number of built-in symbols can be calculated. The name and abi can be acquired by index. The variable is initialized in the package init step. The builtin symboles are function name located in the runtime package.
+The object file data can be written into file by writer. There are two parameters. both of them are pointer type. The object file header is written into file firstly. There are symbols from builtin. The number of built-in symbols can be calculated. The name and abi can be acquired by index. The variable is initialized in the package init step. The builtin symboles are function name located in the runtime package. The information of function symbol contains function arguments, function identity, function flags, function location, function tree nodes.
 
+The three dots can be used as variadic function parameters. In the array literal, the ... notations specifies a length equal to the number of elements in the literal. Three dots are used by the go command as a wildcard when describing package lists. 
+
+The type and its content is specified so they must be matched. The program is organized by linked list. The element of linked list is the program structure. The program structure has the link context field. The as is refered to assembly code and instruction. 
