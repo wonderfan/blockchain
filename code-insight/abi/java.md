@@ -103,3 +103,17 @@ System class loader
 # Class File
 
 A Java class file is a file (with the .class filename extension) containing Java bytecode that can be executed on the Java Virtual Machine (JVM). A Java class file is usually produced by a Java compiler from Java programming language source files (.java files) containing Java classes (alternatively, other JVM languages can also be used to create class files). If a source file has more than one class, each class is compiled into a separate class file.
+
+There are 10 basic sections to the Java class file structure:
+
+Magic Number: 0xCAFEBABE
+Version of Class File Format: the minor and major versions of the class file
+Constant Pool: Pool of constants for the class
+Access Flags: for example whether the class is abstract, static, etc.
+This Class: The name of the current class
+Super Class: The name of the super class
+Interfaces: Any interfaces in the class
+Fields: Any fields in the class
+Methods: Any methods in the class
+Attributes: Any attributes of the class (for example the name of the sourcefile, etc.)
+
