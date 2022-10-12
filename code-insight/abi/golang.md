@@ -5,3 +5,10 @@ The object file data can be written into file by writer. There are two parameter
 The three dots can be used as variadic function parameters. In the array literal, the ... notations specifies a length equal to the number of elements in the literal. Three dots are used by the go command as a wildcard when describing package lists. 
 
 The type and its content is specified so they must be matched. The program is organized by linked list. The element of linked list is the program structure. The program structure has the link context field. The as is refered to assembly code and instruction. 
+
+## Trace Event
+
+The trace file is opened for writing trace event. The tracer is put into the context. The tracer has file, string buffer and encoder fields. The trace data has the fields of events, frames and time span. The event has fields of name, phase, scope, time, during, process id, trace id, stack, argument, category.
+
+The frame has the fields of name and its parent frame. The data model can be encoded and decoded in the format of json. 
+
