@@ -100,7 +100,7 @@ Bootstrap class loader
 Extensions class loader
 System class loader
 
-# Class File
+## Class File
 
 A Java class file is a file (with the .class filename extension) containing Java bytecode that can be executed on the Java Virtual Machine (JVM). A Java class file is usually produced by a Java compiler from Java programming language source files (.java files) containing Java classes (alternatively, other JVM languages can also be used to create class files). If a source file has more than one class, each class is compiled into a separate class file.
 
@@ -116,4 +116,30 @@ Interfaces: Any interfaces in the class
 Fields: Any fields in the class
 Methods: Any methods in the class
 Attributes: Any attributes of the class (for example the name of the sourcefile, etc.)
+
+## Specification
+
+A frame is used to store data and partial results, as well as to perform dynamic linking, return values for methods, and dispatch exceptions.
+
+A new frame is created each time a method is invoked. A frame is destroyed when its method invocation completes, whether that completion is normal or abrupt (it throws an uncaught exception).
+
+Only one frame, the frame for the executing method, is active at any point in a given thread of control. This frame is referred to as the current frame, and its method is known as the current method. The class in which the current method is defined is the current class. Operations on local variables and the operand stack are typically with reference to the current frame.
+
+A single local variable can hold a value of type boolean, byte, char, short, int, float, reference, or returnAddress. A pair of local variables can hold a value of type long or double.
+
+Local variables are addressed by indexing. The index of the first local variable is zero. An integer is considered to be an index into the local variable array if and only if that integer is between zero and one less than the size of the local variable array.
+
+A Java Virtual Machine instruction consists of a one-byte opcode specifying the operation to be performed, followed by zero or more operands supplying arguments or data that are used by the operation. Many instructions have no operands and consist only of an opcode.
+
+The following five instructions invoke methods:
+
+invokevirtual invokes an instance method of an object, dispatching on the (virtual) type of the object. This is the normal method dispatch in the Java programming language.
+
+invokeinterface invokes an interface method, searching the methods implemented by the particular run-time object to find the appropriate method.
+
+invokespecial invokes an instance method requiring special handling, whether an instance initialization method, a private method, or a superclass method.
+
+invokestatic invokes a class (static) method in a named class.
+
+invokedynamic invokes the method which is the target of the call site object bound to the invokedynamic instruction. The call site object was bound to a specific lexical occurrence of the invokedynamic instruction by the Java Virtual Machine as a result of running a bootstrap method before the first execution of the instruction. Therefore, each occurrence of an invokedynamic instruction has a unique linkage state, unlike the other instructions which invoke methods
 
