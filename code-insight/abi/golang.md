@@ -14,3 +14,5 @@ The frame has the fields of name and its parent frame. The data model can be enc
 
 The trace can be filtered by trace time. It includes heap allocation and garbage collection. It has thread statistics. The thread divides into system routines and user routine and how many threads are running. The threads are related to system call. It may be system call caused by system routine, or it is caused by user go routine. 
 
+The frame node is tree like data structure. The frame chains are displayed at the same time. The routine has five states. The go routine have two categories. The basic routine information has state, name, trace event and mark event. 
+
