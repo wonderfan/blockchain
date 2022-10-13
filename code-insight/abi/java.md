@@ -145,3 +145,5 @@ invokedynamic invokes the method which is the target of the call site object bou
 
 An exception is thrown programmatically using the athrow instruction. Exceptions can also be thrown by various Java Virtual Machine instructions if they detect an abnormal condition.
 
+The Java Virtual Machine dynamically loads, links and initializes classes and interfaces. Loading is the process of finding the binary representation of a class or interface type with a particular name and creating a class or interface from that binary representation. Linking is the process of taking a class or interface and combining it into the run-time state of the Java Virtual Machine so that it can be executed. Initialization of a class or interface consists of executing the class or interface initialization method <clinit>.
+
