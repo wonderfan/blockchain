@@ -12,3 +12,5 @@ The trace file is opened for writing trace event. The tracer is put into the con
 
 The frame has the fields of name and its parent frame. The data model can be encoded and decoded in the format of json. 
 
+The trace can be filtered by trace time. It includes heap allocation and garbage collection. It has thread statistics. The thread divides into system routines and user routine and how many threads are running. The threads are related to system call. It may be system call caused by system routine, or it is caused by user go routine. 
+
