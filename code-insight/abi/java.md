@@ -143,3 +143,5 @@ invokestatic invokes a class (static) method in a named class.
 
 invokedynamic invokes the method which is the target of the call site object bound to the invokedynamic instruction. The call site object was bound to a specific lexical occurrence of the invokedynamic instruction by the Java Virtual Machine as a result of running a bootstrap method before the first execution of the instruction. Therefore, each occurrence of an invokedynamic instruction has a unique linkage state, unlike the other instructions which invoke methods
 
+An exception is thrown programmatically using the athrow instruction. Exceptions can also be thrown by various Java Virtual Machine instructions if they detect an abnormal condition.
+
