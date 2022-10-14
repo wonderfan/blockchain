@@ -169,3 +169,6 @@ A class or interface is completely loaded before it is linked.
 
 A class or interface is completely verified and prepared before it is initialized.
 
+The Java Virtual Machine exits when some thread invokes the exit method of class Runtime or class System, or the halt method of class Runtime, and the exit or halt operation is permitted by the security manager.
+
+In addition, the JNI (Java Native Interface) Specification describes termination of the Java Virtual Machine when the JNI Invocation API is used to load and unload the Java Virtual Machine.
