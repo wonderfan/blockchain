@@ -16,3 +16,10 @@ The trace can be filtered by trace time. It includes heap allocation and garbage
 
 The frame node is tree like data structure. The frame chains are displayed at the same time. The routine has five states. The go routine have two categories. The basic routine information has state, name, trace event and mark event. 
 
+## Syntax
+
+Go is a general-purpose language designed with systems programming in mind. It is strongly typed and garbage-collected and has explicit support for concurrent programming. Programs are constructed from packages, whose properties allow efficient management of dependencies.
+
+The syntax is compact and simple to parse, allowing for easy analysis by automatic tools such as integrated development environments.
+
+Productions are expressions constructed from terms and the following operators, in increasing precedence. Tokens form the vocabulary of the Go language. There are four classes: identifiers, keywords, operators and punctuation, and literals. White space, formed from spaces (U+0020), horizontal tabs (U+0009), carriage returns (U+000D), and newlines (U+000A), is ignored except as it separates tokens that would otherwise combine into a single token. Also, a newline or end of file may trigger the insertion of a semicolon. While breaking the input into tokens, the next token is the longest sequence of characters that form a valid token.
