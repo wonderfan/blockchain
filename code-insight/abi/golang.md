@@ -36,3 +36,6 @@ A pointer type denotes the set of all pointers to variables of a given type, cal
 
 A type declaration binds an identifier, the type name, to a type. Type declarations come in two forms: alias declarations and type definitions. A function declaration binds a function name(an identifier) to a function. For an operand ch whose core type is a channel, the value of the receive operation <-ch is the value received from the channel ch. The channel direction must permit receive operations, and the type of the receive operation is the element type of the channel. The expression blocks until a value is available. Receiving from a nil channel blocks forever. A receive operation on a closed channel can always proceed immediately, yielding the element type's zero value after any previously sent values have been received.
 
+A conversion changes the type of an expression to the type specified by the conversion. A conversion may appear literally in the source, or it may be implied by the context in which an expression appears.
+
+An explicit conversion is an expression of the form T(x) where T is a type and x is an expression that can be converted to type T.
