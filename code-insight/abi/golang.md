@@ -38,4 +38,4 @@ A type declaration binds an identifier, the type name, to a type. Type declarati
 
 A conversion changes the type of an expression to the type specified by the conversion. A conversion may appear literally in the source, or it may be implied by the context in which an expression appears.
 
-An explicit conversion is an expression of the form T(x) where T is a type and x is an expression that can be converted to type T.
+An explicit conversion is an expression of the form T(x) where T is a type and x is an expression that can be converted to type T. A labeled statement may be the target of a goto, break or continue statement. A type switch compares types rather than values. It is otherwise similar to an expression switch. It is marked by a special switch expression that has the form of a type assertion using the keyword type rather than an actual type. 
