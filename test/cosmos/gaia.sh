@@ -7,5 +7,9 @@
 
 git clone -b v5.0.8 https://github.com/cosmos/gaia.git
 
-# 
+# build and run local network
+
+cd gain && make build
+
+
 
