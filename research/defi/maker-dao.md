@@ -4,6 +4,36 @@
 
 ```mermaid
 classDiagram
+    note for DSToken "Token Smart Contract" 
+    DSMath <|-- DSToken
+    DSAuth <|-- DSToken
+
+    class DSToken {
+        bool stopped
+        uint256 totalSupply
+        mapping balanceOf
+        mapping allowance
+        string symbol
+        uint8 decimals = 18
+        string name = ""
+        constructor(string memory symbol_)
+        approve(address guy)
+        approve(address guy, uint wad)
+        transfer(address dst, uint wad)
+        transferFrom(address src, address dst, uint wad)
+        push(address dst, uint wad)
+        pull(address src, uint wad)
+        move(address src, address dst, uint wad)
+        mint(uint wad)
+        burn(uint wad)
+        mint(address guy, uint wad)
+        burn(address guy, uint wad)
+        setName(string memory name_)
+    }
+```
+
+```mermaid
+classDiagram
     class TokenUser {
         <<contract>>
         DSToken  token
