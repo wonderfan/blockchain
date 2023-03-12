@@ -29,3 +29,28 @@ classDiagram
         22. define token deposit function
     }
 ```    
+
+## Move Oracle
+
+```mermaid
+classDiagram
+    class `Oracle in Move` {
+        1. declare contract address
+        2. define module name
+        3. use TimeStamp in this module
+        4. use Event in current module
+        5. use Token in current module
+        6. use Signer in current module
+        7. use SafeMath in preset module
+        8. define UpEvent event type
+        9. define Price struct type
+        10. define error codes
+        11. define address registed check function
+        12. define oracle register method
+        13. define price getter method
+        14. define latest price getter method
+        15. define latest exchange rate getter method
+        16. define price update method
+        17. define do price update method
+    }
+```
