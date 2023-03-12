@@ -54,3 +54,23 @@ classDiagram
         17. define do price update method
     }
 ```
+
+## Move Liquidation
+
+```mermaid
+classDiagram
+    class `Liquidation in Move` {
+        <<smart contract>>
+        1. declare contract address
+        2. declare liquidation module
+        3. use Token, Math packages in current module
+        4. define constant variables for precision
+        5. define health factor check function
+        6. define token max borrow calculation function 
+        7. define token max withdraw calculation function
+        8. define min collateral computation function
+        9. define token amount getter function
+        10. define token fiat conversion function
+    }
+```
+
