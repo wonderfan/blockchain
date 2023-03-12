@@ -55,6 +55,37 @@ classDiagram
     }
 ```
 
+## Move NFT
+
+```mermaid
+classDiagram
+    class `NFT in Move` {
+        <<smart contract>>
+        1. delcare contract address
+        2. declare module name
+        3. use standard library
+        4. define Token struct type
+        5. define TokenData struct type
+        6. define TokenData collection type
+        7. define MintEvent struct event type
+        8. define Transfer struct event type
+        9. define constant variables
+        10. define initialize function
+        11. define token id getter function 
+        12. define token balance getter function
+        13. define token total supply getter function
+        14. define token content URI getter function
+        15. define token metata getter function
+        16. define token parent id getter function
+        17. define token index of gallery getter function
+        18. define token join function
+        19. define token split function
+        20. define token creation function
+        21. define right delegation function
+        22. define event emit function
+    }
+```
+
 ## Move Liquidation
 
 ```mermaid
