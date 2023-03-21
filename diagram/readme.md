@@ -20,5 +20,18 @@ mindmap
             holders
             issuers
             verifiers
-        
+        platform
+            service provider
+            service consumer
+            user
+            verifier
+        service architecture
+            data component
+            wallet component
+            endorsement component
+            verification component
+            protocols
+                DID registration
+                VC registration
+                VC verification                      
 ```
