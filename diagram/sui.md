@@ -54,13 +54,13 @@ mindmap
 mindmap
     root((move docs))
         move object
-            move package
+            package
                 bytecode module
                     module name
                     module body
                 publishing unit
                 package dependency                
-            move object
+            object
                 struct data
                     primitive fields
             metadata
