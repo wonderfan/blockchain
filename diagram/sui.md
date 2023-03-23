@@ -47,3 +47,29 @@ mindmap
         parallel execution
         native asset for gas and staking
 ```
+
+## Move Object
+
+```mermaid
+mindmap
+    root((move docs))
+        move object
+            move package
+                bytecode module
+                    module name
+                    module body
+                publishing unit
+                package dependency                
+            move object
+                struct data
+                    primitive fields
+            metadata
+                global unique id
+                version
+                transaction digest
+                owner
+                    address
+                    another object
+                    immutable
+                    shared object
+```
