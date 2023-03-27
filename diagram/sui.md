@@ -74,7 +74,7 @@ mindmap
                     shared object
 ```
 
-## Source Codes
+## Source Code
 
 ```mermaid
 classDiagram
