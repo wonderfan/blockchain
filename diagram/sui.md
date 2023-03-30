@@ -123,3 +123,30 @@ classDiagram
         (15): A Frame is the execution context for a function.        
     }
 ```
+
+## Sui SDK
+
+```mermaid
+mindmap
+    root ((Sui SDK))
+        cryptography
+            ed25519
+            sepc256k1
+            keypair
+            publickey
+            signature
+            mnemonics
+        provider
+            jsonrpc
+        rpc
+            client
+            faucet client
+            socket client
+            connection
+        signer
+            raw signer
+            signer with provider
+            types
+        framework
+        builder
+```
