@@ -8,6 +8,7 @@
 ## Lay2 Solution
 
 - [Taiko](taiko.md)
+- [Aztec](aztec.md)
 
 ## Bridge
 
