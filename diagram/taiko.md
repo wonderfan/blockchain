@@ -6,6 +6,18 @@
 ## Visualization
 
 ```mermaid
+classDiagram
+    class RollUP {
+        <<solution>>
+        It is scaling solution
+        (1): optimistic rollup
+        (2): zk rollup
+        (3): validium rollup
+        (4): volition rollup
+    }
+```
+
+```mermaid
 graph
     a[layer2 architecture]
     b[node]
