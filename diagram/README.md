@@ -10,4 +10,4 @@
 
 ## DID
 
-- [identity](identity.md)
+- [Identity](identity.md)
