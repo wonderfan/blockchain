@@ -8,4 +8,6 @@ The state is equal to the onchain data storage. It is in the form of ledger. The
 
 The option type is one example of defensive programming. The instance of option type is either some or none. It gives the detailed value. 
 
+The transition functions are stored in the wasm runtime. They are part of the whole state. The runtime is determined by its version. The runtime shall execute the block and update the states. The updated states are persisted into ledger through the host functions. The base layer and pallet framework are written as generic framework. When designing the trait, the type parameter or generic type is usually used. 
+
 
