@@ -10,4 +10,6 @@ The option type is one example of defensive programming. The instance of option 
 
 The transition functions are stored in the wasm runtime. They are part of the whole state. The runtime is determined by its version. The runtime shall execute the block and update the states. The updated states are persisted into ledger through the host functions. The base layer and pallet framework are written as generic framework. When designing the trait, the type parameter or generic type is usually used. 
 
+The substrate is a module framework that enables the creation of purpose-specific blockchains. The runtime are the state transition functions in the blockchain and defines the rules of processing the block and transactions. The runtime is essentially the backbone of the blockchain network. The business logic can be divided into two categories: traits and trait implementations. 
+
 
