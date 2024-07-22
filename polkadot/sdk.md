@@ -6,4 +6,6 @@ The chain specification consists of the initial state and configurable parameter
 
 The state is equal to the onchain data storage. It is in the form of ledger. The host is part of the whole network.The whole network is bootstrapped by the node software program. The offchain operations are conducted out of the consensus mechanism. The wasm instance shall query the data through the host functions. The pallets are the unit of modules in the whole stack. It is used to extend the functionalities of current network.
 
+The option type is one example of defensive programming. The instance of option type is either some or none. It gives the detailed value. 
+
 
