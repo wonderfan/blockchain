@@ -13,3 +13,4 @@ The transition functions are stored in the wasm runtime. They are part of the wh
 The substrate is a module framework that enables the creation of purpose-specific blockchains. The runtime are the state transition functions in the blockchain and defines the rules of processing the block and transactions. The runtime is essentially the backbone of the blockchain network. The business logic can be divided into two categories: traits and trait implementations. 
 
 
+Wed Jul 24 06:09:36 AM UTC 2024
