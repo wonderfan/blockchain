@@ -8,4 +8,3 @@ blockchain developmet
 
 ## Smart Contract
 
-- [Java ASM](https://asm.ow2.io/asm4-guide.pdf)
